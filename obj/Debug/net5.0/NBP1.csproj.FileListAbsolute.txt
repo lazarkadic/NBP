@@ -30,3 +30,35 @@ C:\Users\Lazar\Desktop\NBP1\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Lazar\Desktop\NBP1\bin\Debug\net5.0\Neo4j.Driver.dll
 C:\Users\Lazar\Desktop\NBP1\bin\Debug\net5.0\Neo4jClient.dll
 C:\Users\Lazar\Desktop\NBP1\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\bin\Debug\net5.0\appsettings.json
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\bin\Debug\net5.0\NBP1.exe
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\bin\Debug\net5.0\NBP1.deps.json
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\bin\Debug\net5.0\NBP1.runtimeconfig.json
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\bin\Debug\net5.0\NBP1.runtimeconfig.dev.json
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\bin\Debug\net5.0\NBP1.dll
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\bin\Debug\net5.0\ref\NBP1.dll
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\bin\Debug\net5.0\NBP1.pdb
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\bin\Debug\net5.0\Neo4j.Driver.dll
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\bin\Debug\net5.0\Neo4jClient.dll
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\obj\Debug\net5.0\NBP1.csproj.AssemblyReference.cache
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\obj\Debug\net5.0\NBP1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\obj\Debug\net5.0\NBP1.AssemblyInfoInputs.cache
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\obj\Debug\net5.0\NBP1.AssemblyInfo.cs
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\obj\Debug\net5.0\NBP1.csproj.CoreCompileInputs.cache
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\obj\Debug\net5.0\NBP1.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\obj\Debug\net5.0\NBP1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\obj\Debug\net5.0\staticwebassets\NBP1.StaticWebAssets.Manifest.cache
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\obj\Debug\net5.0\staticwebassets\NBP1.StaticWebAssets.xml
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\obj\Debug\net5.0\scopedcss\bundle\NBP1.styles.css
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\obj\Debug\net5.0\NBP1.RazorTargetAssemblyInfo.cache
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\obj\Debug\net5.0\NBP1.dll
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\obj\Debug\net5.0\ref\NBP1.dll
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\obj\Debug\net5.0\NBP1.pdb
+C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\obj\Debug\net5.0\NBP1.genruntimeconfig.cache

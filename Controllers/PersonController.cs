@@ -39,10 +39,17 @@ public class PersonController : ControllerBase
     }
 
     [HttpGet]
-    [Route("GetAllPersons/{id}")]
+    [Route("GetPersonsById/{id}")]
     public async Task<IActionResult> GetPersonById(Guid id)
     {
         var person=await _client.Cypher.Match("(p:Person)").Where((Person p)=>p.Id==id).Return(p=> p.As<Person>()).ResultsAsync;
+        return Ok(person);
+    }
+    [HttpGet]
+    [Route("GetPersonByName/{name}")]
+    public async Task<IActionResult> GetPersonByName(String name)
+    {
+        var person=await _client.Cypher.Match("(p:Person)").Where((Person p)=>p.Name==name).Return(p=> p.As<Person>()).ResultsAsync;
         return Ok(person);
     }
 
