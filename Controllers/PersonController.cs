@@ -21,10 +21,17 @@ public class PersonController : ControllerBase
 
     [HttpPost]
     [Route("CreateActor")]
-    public async Task<IActionResult> CreateNodeActor([FromBody]Person  person)
+    public async Task<IActionResult> CreateNodeActor(Person  person)
     {
+
+        Person person_new=new()
+        {
+            Id = Guid.NewGuid(), 
+            Name = person.Name, 
+            BornYear=person.BornYear,
+        };
         await _client.Cypher.Create("(p:Person $person)")
-                            .WithParam("person",person)
+                            .WithParam("person",person_new)
                             .ExecuteWithoutResultsAsync();
 
         return Ok();
@@ -37,7 +44,15 @@ public class PersonController : ControllerBase
         var persons=await _client.Cypher.Match("(n:Person)").Return(n=> n.As<Person>()).ResultsAsync;
         return Ok(persons);
     }
-
+    
+    [HttpGet]
+    [Route("GetProperty/{id}")]
+    public async Task<IActionResult> GetProperty(Guid id)
+    {
+        
+        var person=await _client.Cypher.Match("(p:Person)").Where((Person p)=>p.Id==id).Return(p=> p.As<Person>().Name).ResultsAsync;
+        return Ok(person);
+    }
     [HttpGet]
     [Route("GetPersonsById/{id}")]
     public async Task<IActionResult> GetPersonById(Guid id)
@@ -52,5 +67,29 @@ public class PersonController : ControllerBase
         var person=await _client.Cypher.Match("(p:Person)").Where((Person p)=>p.Name==name).Return(p=> p.As<Person>()).ResultsAsync;
         return Ok(person);
     }
+    [HttpDelete]
+    [Route("DeletePersonByName/{name}")]
+    public async Task<IActionResult> DeletePersonByName(string name)
+    {
+        await _client.Cypher.Match("(p:Person)").Where((Person p)=>p.Name==name).Delete("p").ExecuteWithoutResultsAsync();
+
+        return Ok();
+    }
+    [HttpPut]
+    [Route("UpdatePersonByName/{name}")]
+    public async Task<IActionResult> UpdatePersonByName(string name,Person person)
+    {
+        Person person_new=new()
+        {
+            Name=person.Name,
+            BornYear=person.BornYear,
+
+        };
+        
+        await _client.Cypher.Match("(p:Person)").Where((Person p)=>p.Name==name).Set("p=$person").WithParam("person",person_new).ExecuteWithoutResultsAsync();
+        return Ok();
+    }
+
+
 
 }
