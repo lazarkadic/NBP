@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7TsgMPRizlYLJbGzi5SY3hR2kjyNeHcW61UaWjYCSmLctFWFfp+9eFiyXooR8qVt7qt0WlNcEqvj+jLHIZ/FqA==",
+  "dgSpecHash": "metYq2IhptkZqCc09BAkxt7W252KFVn53nTUCjtpNP/0hJ1jS4JMGvPHTbFSjRD+GOWjkaYzqgxmU37m8OAKgg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lazar\\Desktop\\Napredne Baze Projekat\\NBP\\NBP1.csproj",
+  "projectFilePath": "E:\\Lazar\\Elfak\\4. godina\\Napredne baze podataka\\NBP_Project\\NBP1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lazar\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\Lazar\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

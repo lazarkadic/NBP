@@ -62,3 +62,35 @@ C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\obj\Debug\net5.0\NBP1.dll
 C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\obj\Debug\net5.0\ref\NBP1.dll
 C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\obj\Debug\net5.0\NBP1.pdb
 C:\Users\Lazar\Desktop\Napredne Baze Projekat\NBP\obj\Debug\net5.0\NBP1.genruntimeconfig.cache
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\bin\Debug\net5.0\appsettings.Development.json
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\bin\Debug\net5.0\appsettings.json
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\bin\Debug\net5.0\NBP1.exe
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\bin\Debug\net5.0\NBP1.deps.json
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\bin\Debug\net5.0\NBP1.runtimeconfig.json
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\bin\Debug\net5.0\NBP1.runtimeconfig.dev.json
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\bin\Debug\net5.0\NBP1.dll
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\bin\Debug\net5.0\ref\NBP1.dll
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\bin\Debug\net5.0\NBP1.pdb
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\bin\Debug\net5.0\Microsoft.OpenApi.dll
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\bin\Debug\net5.0\Neo4j.Driver.dll
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\bin\Debug\net5.0\Neo4jClient.dll
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\bin\Debug\net5.0\Newtonsoft.Json.dll
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.csproj.AssemblyReference.cache
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.GeneratedMSBuildEditorConfig.editorconfig
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.AssemblyInfoInputs.cache
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.AssemblyInfo.cs
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.csproj.CoreCompileInputs.cache
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.MvcApplicationPartsAssemblyInfo.cs
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.MvcApplicationPartsAssemblyInfo.cache
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\staticwebassets\NBP1.StaticWebAssets.Manifest.cache
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\staticwebassets\NBP1.StaticWebAssets.xml
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\scopedcss\bundle\NBP1.styles.css
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.RazorTargetAssemblyInfo.cache
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.dll
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\ref\NBP1.dll
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.pdb
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.genruntimeconfig.cache
