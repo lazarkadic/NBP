@@ -1,0 +1,30 @@
+*Neo4j
+
+MOVIE:
+-Id
+-Title
+-Description
+-ImageUri
+-PublishingDate
+-Rate
+-RateCount
+~Genre (moze da se realizuje preko labela koje se dodaju cvorovima, Movie i Person i jesu labele zapravo, nisu tipovi!!)
+
+PERSON (Actor || Producer):
+-Name
+-BornYear
+
+*Redis
+
+USER:
+-Username
+-Password
+-Subscriptions (ID nekog od admina)
+
+ADMIN:
+-Username
+-Password
+
+MOVIE:
+-IdFromNeo4j
+-Comments

@@ -11,7 +11,7 @@ namespace NBP1.Models
 
         public String ImageUri {get; set;}
 
-        public int DatePublish {get; set;}
+        public int PublishingDate {get; set;}
 
         public double Rate {get; set;}
 

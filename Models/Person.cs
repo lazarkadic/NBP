@@ -6,7 +6,5 @@ namespace NBP1.Models
         public Guid Id {get; init;}
         public string Name {get; set;}
         public int BornYear {get; set;}
-
-
     }
-}
+}   

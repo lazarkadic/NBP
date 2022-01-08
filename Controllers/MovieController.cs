@@ -29,7 +29,7 @@ public class MovieController : ControllerBase
             Title = movie.Title, 
             Description = movie.Description,
             ImageUri = movie.ImageUri,
-            DatePublish = movie.DatePublish,
+            PublishingDate = movie.PublishingDate,
             Rate = movie.Rate,
             RateCount = movie.RateCount
         };
@@ -45,7 +45,8 @@ public class MovieController : ControllerBase
     [Route("GetAllMovies")]
     public async Task<IActionResult> GetAllMovies()
     {
-        var movies = await _client.Cypher.Match("(m:Movie)").Return(m => m.As<Movie>()).ResultsAsync;
+        var movies = await _client.Cypher.Match("(m:Movie)")
+                                        .Return(m => m.As<Movie>()).ResultsAsync;
         return Ok(movies);
     }
 
@@ -53,7 +54,9 @@ public class MovieController : ControllerBase
     [Route("GetMoviesById/{id}")]
     public async Task<IActionResult> GetMoviesById(Guid id)
     {
-        var movie = await _client.Cypher.Match("(m:Movie)").Where((Movie m) => m.Id == id).Return(m => m.As<Movie>()).ResultsAsync;
+        var movie = await _client.Cypher.Match("(m:Movie)")
+                                        .Where((Movie m) => m.Id == id)
+                                        .Return(m => m.As<Movie>()).ResultsAsync;
         return Ok(movie);
     }
 
@@ -61,7 +64,9 @@ public class MovieController : ControllerBase
     [Route("GetMovieByTitle/{title}")]
     public async Task<IActionResult> GetMovieByTitle(String title)
     {
-        var movie = await _client.Cypher.Match("(m:Movie)").Where((Movie m) => m.Title == title).Return(m => m.As<Movie>()).ResultsAsync;
+        var movie = await _client.Cypher.Match("(m:Movie)")
+                                        .Where((Movie m) => m.Title == title)
+                                        .Return(m => m.As<Movie>()).ResultsAsync;
         return Ok(movie);
     }
 
@@ -69,7 +74,9 @@ public class MovieController : ControllerBase
     [Route("GetMovieByRate/{rate}")]
     public async Task<IActionResult> GetMovieByRate(double rate)
     {
-        var movie = await _client.Cypher.Match("(m:Movie)").Where((Movie m) => m.Rate == rate).Return(m => m.As<Movie>()).ResultsAsync;
+        var movie = await _client.Cypher.Match("(m:Movie)")
+                                        .Where((Movie m) => m.Rate == rate)
+                                        .Return(m => m.As<Movie>()).ResultsAsync;
         return Ok(movie);
     }
 
@@ -79,21 +86,26 @@ public class MovieController : ControllerBase
     {
         if(rate >= 0 && rate <= 5)
         {
-            // var movie = await _client.Cypher.Match("(m:Movie)")
-            //                                 .Where((Movie m) => m.Id == id)
-            //                                 .Return(m => m.As<string>("m.Rate")).ResultsAsync;
-            
-            var movie = await _client.Cypher.Match("(m:Movie)")
-                                             .Where((Movie m) => m.Id == id)
-                                             .Return(m => m.As<Movie>()).ResultsAsync;
+            var query = await _client.Cypher.Match("(m:Movie)")
+                                            .Where((Movie m) => m.Id == id)
+                                            .Return((m) => new { movie = m.As<Movie>() }).ResultsAsync;
 
-            // Dictionary<string, object> queryParameters = new Dictionary<string, object>();
-            // queryParameters.Add("id", id);
+            Movie m = new Movie();
+            foreach (var item in query)
+            {
+                m = item.movie;
+            }
 
-            // var query = new Neo4jClient.Cypher.CypherQuery("MATCH (m:Movie) WHERE m.Id == " + id + " return m", queryParameters, Neo4jClient.Cypher.CypherResultMode.Projection, "neo4j");
+            m.RateCount += 1;
+            m.Rate += rate;
+            m.Rate = m.Rate/m.RateCount;
 
-            // List<Movie> movie1 = ((IRawGraphClient)_client).ExecuteGetCypherResultsAsync<Movie>(query);
-            return Ok(movie);
+            query = await _client.Cypher.Match("(m:Movie)")
+                                            .Where((Movie m) => m.Id == id)
+                                            .Set("m = $movie")
+                                            .WithParam("movie", m)
+                                            .Return((m) => new { movie = m.As<Movie>() }).ResultsAsync;
+            return Ok(query);
         }
         return BadRequest();
     }
