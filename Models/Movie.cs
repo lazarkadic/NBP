@@ -13,7 +13,7 @@ namespace NBP1.Models
 
         public int DatePublish {get; set;}
 
-        public int Rate {get; set;}
+        public double Rate {get; set;}
 
         public int RateCount {get; set;}
 
