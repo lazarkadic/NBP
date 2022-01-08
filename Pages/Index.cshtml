@@ -7,4 +7,10 @@
 }
 
 <h1>Welcome to IMDb <i>Clone</i></h1>
-<a href="./Movie">Show all movies.</a>
+<a href="./Movie">Show all movies</a>
+@* <h3>@Html.ActionLink("Show all movies", "GetAllMovies", "Movies")</h3> *@
+
+@* treba da se stavi kad se preuzima nesto sa forme kroz Razor stranicu *@
+<form action="">
+    @Html.AntiForgeryToken()
+</form>

@@ -43,11 +43,20 @@ public class MovieController : ControllerBase
 
     [HttpGet]
     [Route("GetAllMovies")]
-    public async Task<IActionResult> GetAllMovies()
+    public async Task<IActionResult> GetAllMovies()//NBP1.Pages.MovieModel model)
     {
         var movies = await _client.Cypher.Match("(m:Movie)")
                                         .Return(m => m.As<Movie>()).ResultsAsync;
         return Ok(movies);
+        // var query = await _client.Cypher.Match("(m:Movie)")
+        //                                 .Return((m) => new { movie = m.As<Movie>() }).ResultsAsync;
+
+        // foreach (var item in query)
+        // {
+        //     model.Movies.Add(item.movie);
+        // }
+
+        // return Pages // fali samo kako da se vrati nazad na Razor stranicu??
     }
 
     [HttpGet]
