@@ -36,6 +36,7 @@ namespace NBP1
             var client = new BoltGraphClient(new Uri("bolt://localhost:7687"), "neo4j", "root");   // mozda treba root za pass
             client.ConnectAsync();
             services.AddSingleton<IGraphClient>(client);
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,9 +55,12 @@ namespace NBP1
 
             app.UseAuthorization();
 
+            app.UseStaticFiles();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapRazorPages();
             });
         }
     }

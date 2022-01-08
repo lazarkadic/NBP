@@ -1,0 +1,33 @@
+﻿@page
+@using NBP1.Pages
+@model MovieModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Movie page";
+}
+@section Styles 
+{
+    <link rel="stylesheet" href="Styles/Style.css">
+}
+
+<h1>Here are all movies:</h1>
+
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Publishing Date</th>
+        <th>Rate</th>
+        <th>Rate Count</th>
+    </tr>
+    @foreach (var m in Model.Movies)
+    {
+        <tr>
+            <td>@m.Title</td>
+            <td>@m.Description</td>
+            <td>@m.PublishingDate</td>
+            <td>@m.Rate</td>
+            <td>@m.RateCount</td>
+        </tr>
+    }
+</table>

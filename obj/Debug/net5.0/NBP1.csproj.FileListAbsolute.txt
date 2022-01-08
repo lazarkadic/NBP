@@ -94,3 +94,16 @@ E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP
 E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\ref\NBP1.dll
 E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.pdb
 E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.genruntimeconfig.cache
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\bin\Debug\net5.0\NBP1.Views.dll
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\bin\Debug\net5.0\NBP1.Views.pdb
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.RazorAssemblyInfo.cache
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.RazorAssemblyInfo.cs
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.TagHelpers.input.cache
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.TagHelpers.output.cache
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.RazorCoreGenerate.cache
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\Razor\Pages\_Layout.cshtml.g.cs
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.RazorTargetAssemblyInfo.cs
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.Views.pdb
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\NBP1.csproj.CopyComplete
+E:\Lazar\Elfak\4. godina\Napredne baze podataka\NBP_Project\obj\Debug\net5.0\Razor\Pages\Movie.cshtml.g.cs

@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Lazar\\Desktop\\Napredne Baze Projekat\\NBP\\NBP1.csproj",
+  "FilePath": "e:\\Lazar\\Elfak\\4. godina\\Napredne baze podataka\\NBP_Project\\NBP1.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15617,6 +15617,22 @@
     "CSharpLanguageVersion": 900
   },
   "RootNamespace": "NBP1",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "e:\\Lazar\\Elfak\\4. godina\\Napredne baze podataka\\NBP_Project\\Pages\\_Layout.cshtml",
+      "TargetPath": "Pages\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Lazar\\Elfak\\4. godina\\Napredne baze podataka\\NBP_Project\\Pages\\Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Lazar\\Elfak\\4. godina\\Napredne baze podataka\\NBP_Project\\Pages\\Movie.cshtml",
+      "TargetPath": "Pages\\Movie.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }
