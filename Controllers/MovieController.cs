@@ -110,4 +110,16 @@ public class MovieController : ControllerBase
         return BadRequest();
     }
 
+    [HttpDelete]
+    [Route("DeleteMovieById/{id}")]
+    public async Task<IActionResult> DeleteMovieById(Guid id)
+    {
+        await _client.Cypher.Match("(m:Movie)")
+                            .Where((Movie m) => m.Id == id)
+                            .Delete("m")
+                            .ExecuteWithoutResultsAsync();
+
+        return Ok();
+    }
+
 }
