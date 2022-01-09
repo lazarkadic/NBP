@@ -90,6 +90,36 @@ public class PersonController : ControllerBase
         return Ok();
     }
 
+    [HttpGet]
+    [Route("{pid}/{rtype}/{title}")]
+    public async Task<IActionResult> Connect(Guid pid, string rtype, string title)
+    {
+        if(rtype.ToLower() == "actedin")
+            rtype = "Acted_in";
+        if(rtype.ToLower() == "directedby")
+            rtype = "Directed_by";
+        
+        await _client.Cypher.Match("(p:Person), (m:Movie)")
+                            .Where((Person p, Movie m) => p.Id == pid &&  m.Title == title)
+                            .Create("(p)-[r:" + rtype + "]->(m)")
+                            .ExecuteWithoutResultsAsync();
+        return Ok();
+    }
 
+    [HttpGet]
+    [Route("{rtype}/Diconnect/{title}")]
+    public async Task<IActionResult> Disconnect(string rtype, string title)
+    {
+        if(rtype.ToLower() == "actedin")
+            rtype = "Acted_in";
+        if(rtype.ToLower() == "directedby")
+            rtype = "Directed_by";
+        
+        await _client.Cypher.Match("p=()-[r:" + rtype + "]->(m:Movie)")
+                            .Where((Movie m) => m.Title == title)
+                            .Delete("r")
+                            .ExecuteWithoutResultsAsync();
+        return Ok();
+    }
 
 }
