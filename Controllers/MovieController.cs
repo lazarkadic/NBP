@@ -131,4 +131,34 @@ public class MovieController : ControllerBase
         return Ok();
     }
 
+    [HttpGet]
+    [Route("GetAllLabelsForMovie/{title}")]
+    public async Task<IActionResult> GetAllLabelsForMovie(string title)
+    {
+        var movieLabels = await _client.Cypher.Match("(m:Movie)")
+                                        .Where((Movie m) => m.Title == title)
+                                        .ReturnDistinct(m => m.Labels()).ResultsAsync;
+        return Ok(movieLabels);
+    }
+
+    [HttpGet]
+    [Route("GetAllLabels")]
+    public async Task<IActionResult> GetAllLabels()
+    {
+        var movieLabels = await _client.Cypher.Match("(m)")
+                                        .ReturnDistinct(m => m.Labels()).ResultsAsync;
+        return Ok(movieLabels);
+    }
+
+    [HttpPost]
+    [Route("SetLabelForMovie/{title}/{label}")]
+    public async Task<IActionResult> GetAllLabels(string title, string label)
+    {
+        var movieLabels = await _client.Cypher.Match("(m:Movie)")
+                                              .Where((Movie m) => m.Title == title)
+                                              .Set("m:"+ label +"")
+                                              .ReturnDistinct(m => m.Labels()).ResultsAsync;
+        return Ok(movieLabels);
+    }
+
 }
